@@ -27,21 +27,182 @@ public class TextEditor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanelMsster = new javax.swing.JPanel();
+        jTopPanel = new javax.swing.JPanel();
+        jBold = new javax.swing.JToggleButton();
+        jLarge = new javax.swing.JToggleButton();
+        jBlue = new javax.swing.JToggleButton();
+        jMiddlePanel = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea = new javax.swing.JTextArea();
+        jBottomPanel = new javax.swing.JPanel();
+        jLoad = new javax.swing.JButton();
+        jSave = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(0, 0, 500, 500));
+        setMaximumSize(new java.awt.Dimension(500, 500));
+        setMinimumSize(new java.awt.Dimension(500, 500));
+        setPreferredSize(new java.awt.Dimension(500, 500));
+        setResizable(false);
+        setSize(new java.awt.Dimension(500, 500));
+
+        jPanelMsster.setBackground(new java.awt.Color(100, 100, 100));
+        jPanelMsster.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
+        jPanelMsster.setMaximumSize(new java.awt.Dimension(500, 500));
+        jPanelMsster.setMinimumSize(new java.awt.Dimension(500, 500));
+        jPanelMsster.setPreferredSize(new java.awt.Dimension(500, 500));
+
+        jBold.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jBold.setText("BOLD");
+        jBold.setToolTipText("");
+        jBold.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBoldActionPerformed(evt);
+            }
+        });
+
+        jLarge.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLarge.setText("LARGE");
+        jLarge.setToolTipText("");
+        jLarge.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jLargeActionPerformed(evt);
+            }
+        });
+
+        jBlue.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jBlue.setText("BLUE");
+        jBlue.setToolTipText("");
+        jBlue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBlueActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jTopPanelLayout = new javax.swing.GroupLayout(jTopPanel);
+        jTopPanel.setLayout(jTopPanelLayout);
+        jTopPanelLayout.setHorizontalGroup(
+            jTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jTopPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jBold)
+                .addGap(39, 39, 39)
+                .addComponent(jLarge)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addComponent(jBlue)
+                .addContainerGap())
+        );
+        jTopPanelLayout.setVerticalGroup(
+            jTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jTopPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBold)
+                    .addComponent(jLarge)
+                    .addComponent(jBlue))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jBlue.getAccessibleContext().setAccessibleName("jBlue");
+
+        jTextArea.setColumns(20);
+        jTextArea.setRows(5);
+        jScrollPane1.setViewportView(jTextArea);
+
+        javax.swing.GroupLayout jMiddlePanelLayout = new javax.swing.GroupLayout(jMiddlePanel);
+        jMiddlePanel.setLayout(jMiddlePanelLayout);
+        jMiddlePanelLayout.setHorizontalGroup(
+            jMiddlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jMiddlePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+        );
+        jMiddlePanelLayout.setVerticalGroup(
+            jMiddlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jMiddlePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jLoad.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLoad.setText("LOAD");
+
+        jSave.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jSave.setText("SAVE");
+
+        javax.swing.GroupLayout jBottomPanelLayout = new javax.swing.GroupLayout(jBottomPanel);
+        jBottomPanel.setLayout(jBottomPanelLayout);
+        jBottomPanelLayout.setHorizontalGroup(
+            jBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jBottomPanelLayout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addComponent(jLoad)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jSave)
+                .addGap(58, 58, 58))
+        );
+        jBottomPanelLayout.setVerticalGroup(
+            jBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jBottomPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLoad)
+                    .addComponent(jSave))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanelMssterLayout = new javax.swing.GroupLayout(jPanelMsster);
+        jPanelMsster.setLayout(jPanelMssterLayout);
+        jPanelMssterLayout.setHorizontalGroup(
+            jPanelMssterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMssterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelMssterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jBottomPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jMiddlePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTopPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanelMssterLayout.setVerticalGroup(
+            jPanelMssterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMssterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTopPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jMiddlePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jBottomPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanelMsster, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanelMsster, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 513, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBlueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBlueActionPerformed
+
+    private void jLargeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLargeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLargeActionPerformed
+
+    private void jBoldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBoldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBoldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +240,16 @@ public class TextEditor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton jBlue;
+    private javax.swing.JToggleButton jBold;
+    private javax.swing.JPanel jBottomPanel;
+    private javax.swing.JToggleButton jLarge;
+    private javax.swing.JButton jLoad;
+    private javax.swing.JPanel jMiddlePanel;
+    private javax.swing.JPanel jPanelMsster;
+    private javax.swing.JButton jSave;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea;
+    private javax.swing.JPanel jTopPanel;
     // End of variables declaration//GEN-END:variables
 }
